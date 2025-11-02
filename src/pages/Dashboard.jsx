@@ -36,7 +36,6 @@ const Dashboard = () => {
         'ארכיטקטורה סקיילבילית עם Supabase'
       ],
       color: 'from-blue-500 to-cyan-600',
-      github: true
     },
     {
       name: '2TimesWise - Interactive Web Game',
