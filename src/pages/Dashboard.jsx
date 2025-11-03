@@ -8,88 +8,89 @@ const Dashboard = () => {
     other: ['Slack API', 'Zoho', 'Deluge', 'WordPress', 'Retrofit', 'Coroutines']
   };
 
-  const projects = [
-    {
-      name: 'Followy - Instagram Automation Platform',
-      url: 'https://followy.co.il/',
-      description: 'מערכת בוטים מתקדמת לאינסטגרם המקדמת עסקים באמצעות סוכני AI',
-      tech: 'React, Node.js, Microservices',
-      highlights: [
-        'ארכיטקטורת microservices מורכבת - 3 שירותים מתקשרים (Gateway, Scheduler, Dispatcher)',
-        'התחברות דרך Google OAuth 2.0',
-        'מערכת תזמון אינטליגנטית לפעילות אוטומטית',
-        'ממשק ניהול פרמטרים מתקדם ללקוח',
-        'דף נחיתה מעוצב המציג את החזון והיזם'
-      ],
-      color: 'from-purple-500 to-pink-600'
-    },
-    {
-      name: 'EduApp - Instructor Management System',
-      url: 'https://github.com/guy4213/eduApp',
-      description: 'אפליקציית ניהול מדריכים וקורסים מתקדמת',
-      tech: 'React, Supabase',
-      highlights: [
-        'ממשק ניהול מורכב למנהלים ו-Sub Admins',
-        'יצירת ותזמון קורסים ושיעורים בהתאמה אישית',
-        'מערכת תזמון חכמה עם פרמטרים מתקדמים',
-        'אפליקציה במהלך פיתוח מתמשך',
-        'ארכיטקטורה סקיילבילית עם Supabase'
-      ],
-      color: 'from-blue-500 to-cyan-600',
-    },
-    {
-      name: '2TimesWise - Interactive Web Game',
-      url: 'https://2timeswise.com/',
-      description: 'משחק אינטראקטיבי מבוסס ווב',
-      tech: 'React, Node.js',
-      highlights: [
-        'עיצוב רספונסיבי מלא',
-        'פיתוח Frontend מורכב',
-        'חוויית משתמש אינטואיטיבית',
-        'אופטימיזציה לביצועים גבוהים'
-      ],
-      color: 'from-green-500 to-teal-600'
-    },
-    {
-      name: 'Zoho & Slack Automation System',
-      url: null,
-      description: 'מערכת אוטומציה מתקדמת לחיבור Slack ו-Zoho CRM',
-      tech: 'Python, Zoho Deluge, Node.js, JavaScript',
-      highlights: [
-        'Scraping של Slack API לעקיפת מגבלות עלות',
-        'הזמנה אוטומטית של משתמשים ל-Slack',
-        'אינטגרציה מלאה עם Zoho CRM',
-        'סקריפטים בשפת Deluge + JavaScript לניתוח נתונים',
-        'חיסכון משמעותי בעלויות ללקוח'
-      ],
-      color: 'from-orange-500 to-red-600'
-    }
-  ];
+const projects = [
+  {
+    name: 'Followy - Instagram Automation Platform',
+    url: 'https://followy.co.il/',
+    description: 'An advanced Instagram bot system that promotes businesses using AI agents.',
+    tech: 'React, Node.js, Microservices',
+    highlights: [
+      'Complex microservices architecture - 3 communicating services (Gateway, Scheduler, Dispatcher)',
+      'Google OAuth 2.0 integration',
+      'Intelligent scheduling system for automated activity',
+      'Advanced parameter management dashboard for clients',
+      'Modern landing page presenting the vision and the founder'
+    ],
+    color: 'from-purple-500 to-pink-600'
+  },
+  {
+    name: 'EduApp - Instructor Management System',
+    url: 'https://github.com/guy4213/eduApp',
+    description: 'An advanced web application for managing instructors and courses.',
+    tech: 'React, Supabase',
+    highlights: [
+      'Complex management interface for admins and sub-admins',
+      'Creation and scheduling of courses and lessons with customization options',
+      'Smart scheduling system with advanced parameters',
+      'Application under continuous development',
+      'Scalable architecture using Supabase'
+    ],
+    color: 'from-blue-500 to-cyan-600',
+  },
+  {
+    name: '2TimesWise - Interactive Web Game',
+    url: 'https://2timeswise.com/',
+    description: 'An interactive web-based educational game.',
+    tech: 'React, Node.js',
+    highlights: [
+      'Fully responsive design',
+      'Complex front-end development',
+      'Intuitive user experience',
+      'Optimized for high performance'
+    ],
+    color: 'from-green-500 to-teal-600'
+  },
+  {
+    name: 'Zoho & Slack Automation System',
+    url: null,
+    description: 'An advanced automation system connecting Slack and Zoho CRM.',
+    tech: 'Python, Zoho Deluge, Node.js, JavaScript',
+    highlights: [
+      'Slack API scraping to bypass cost limitations',
+      'Automatic Slack user invitations',
+      'Full integration with Zoho CRM',
+      'Custom scripts in Deluge and JavaScript for data analysis',
+      'Significant cost savings for the client'
+    ],
+    color: 'from-orange-500 to-red-600'
+  }
+];
 
-  const experience = [
-    {
-      company: 'APISOUL',
-      role: 'Full Stack Developer',
-      period: 'January 2024 - Present',
-      description: [
-        'פיתוח אפליקציות ווב עם React, TypeScript, JavaScript ו-Node.js',
-        'אינטגרציה של כלי אוטומציה: Zoho, Deluge, Node.js, Java',
-        'פיתוח תכונות תקשורת real-time עם Slack APIs',
-        'פיתוח ותחזוקת אתרי WordPress'
-      ]
-    },
-    {
-      company: 'ZIONET',
-      role: 'Full Stack Developer',
-      period: 'January 2023 - January 2024',
-      description: [
-        'עיצוב ויישום ארכיטקטורת microservices עם Java ו-Spring Boot',
-        'פיתוח קומפוננטות Front-end רספונסיביות עם React ו-TypeScript',
-        'בניית ותחזוקת RESTful APIs',
-        'עבודה בצוותים agile עם Git workflows מתקדמים'
-      ]
-    }
-  ];
+const experience = [
+  {
+    company: 'APISOUL',
+    role: 'Full Stack Developer',
+    period: 'January 2024 - Present',
+    description: [
+      'Developing web applications using React, TypeScript, JavaScript, and Node.js',
+      'Integrating automation tools: Zoho, Deluge, Node.js, and Java',
+      'Building real-time communication features using Slack APIs',
+      'Developing and maintaining WordPress websites'
+    ]
+  },
+  {
+    company: 'ZIONET',
+    role: 'Full Stack Developer',
+    period: 'January 2023 - January 2024',
+    description: [
+      'Designing and implementing microservices architecture using Java and Spring Boot',
+      'Developing responsive front-end components with React and TypeScript',
+      'Building and maintaining RESTful APIs',
+      'Collaborating in agile teams with advanced Git workflows'
+    ]
+  }
+];
+
 
   return (
     <div className="space-y-12">
@@ -282,7 +283,7 @@ const Dashboard = () => {
                     <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                       {project.name}
                     </h4>
-                    <p className="text-gray-600 text-lg mb-4 leading-relaxed">{project.description}</p>
+                    <p className="text-gray-600 text-lg mb-4 leading-relaxed ">{project.description}</p>
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="px-4 py-2 bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 rounded-xl text-sm font-semibold border border-gray-300">
                         {project.tech}
@@ -314,7 +315,7 @@ const Dashboard = () => {
 
                 <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6">
                   <h5 className="text-sm font-bold text-gray-700 uppercase tracking-wide mb-4">Key Highlights</h5>
-                  <ul className="space-y-3" dir="rtl">
+                  <ul className="space-y-3" >
                     {project.highlights.map((highlight, i) => (
                       <li key={i} className="flex items-start gap-3 text-gray-700 text-right">
                         <svg className="w-6 h-6 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -359,11 +360,11 @@ const Dashboard = () => {
                 </span>
               </div>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6">
-                <ul className="space-y-3" dir="rtl">
+                <ul className="space-y-3" >
                   {exp.description.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-gray-700 text-right">
+                    <li key={i} className="flex items-start gap-3 text-gray-700 text-left">
                       <svg className="w-6 h-6 text-blue-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                       <span className="leading-relaxed">{item}</span>
                     </li>
